@@ -123,25 +123,3 @@ const (
 	// authentication credentials for the operation.
 	Unauthenticated Code = 16
 )
-
-func (c Code) String() string {
-	return map[Code]string{
-		OK:                 "OK",
-		Canceled:           "Canceled",
-		PermissionDenied:   "PermissionDenied",
-		FailedPrecondition: "FailedPrecondition",
-		Unknown:            "Unknown",
-		ResourceExhausted:  "ResourceExhausted",
-		InvalidArgument:    "InvalidArgument",
-		DeadlineExceeded:   "DeadlineExceeded",
-		NotFound:           "NotFound",
-		AlreadyExists:      "AlreadyExists",
-		Aborted:            "Aborted",
-		OutOfRange:         "OutOfRange",
-		Unimplemented:      "Unimplemented",
-		Internal:           "Internal",
-		Unavailable:        "Unavailable",
-		DataLoss:           "DataLoss",
-		Unauthenticated:    "Unauthenticated",
-	}[c]
-}
